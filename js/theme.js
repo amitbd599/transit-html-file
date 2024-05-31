@@ -171,7 +171,7 @@
       nav: false,
       dots: true,
       autoWidth: false,
-      autoplay: true,
+      autoplay: false,
       smartSpeed: 700,
       autoplayTimeout: 5000,
       autoplayHoverPause: true,
@@ -193,6 +193,40 @@
         },
         1200: {
           items: 1,
+        },
+      },
+    });
+  }
+  if ($('.team-one__carousel').length) {
+    $('.team-one__carousel').owlCarousel({
+      loop: true,
+      margin: 30,
+      nav: false,
+      dots: true,
+      autoWidth: false,
+      autoplay: false,
+      smartSpeed: 700,
+      autoplayTimeout: 5000,
+      autoplayHoverPause: true,
+      groups:1,
+      responsive: {
+        0: {
+          items: 1,
+        },
+        480: {
+          items: 1,
+        },
+        600: {
+          items: 2,
+        },
+        991: {
+          items: 2,
+        },
+        1000: {
+          items: 3,
+        },
+        1200: {
+          items: 3,
         },
       },
     });
@@ -247,39 +281,7 @@
     });
   }
 
-  if ($('.team-one__thumb-carousel').length) {
-    var teamOneThumbCarousel = new Swiper('.team-one__thumb-carousel', {
-      slidesPerView: 2,
-      spaceBetween: 30,
-      freeMode: true,
-      speed: 1400,
-      watchSlidesVisibility: true,
-      watchSlidesProgress: true,
-      loop: true,
-      autoplay: {
-        delay: 5000,
-      },
-    });
-  }
-
-  if ($('.team-one__carousel').length) {
-    var teamOneCarousel = new Swiper('.team-one__carousel', {
-      navigation: {
-        nextEl: '.team-carousel-btn .left-btn',
-        prevEl: '.team-carousel-btn .right-btn',
-      },
-      observer: true,
-      observeParents: true,
-      speed: 1400,
-      mousewheel: true,
-      autoplay: {
-        delay: 5000,
-      },
-      thumbs: {
-        swiper: teamOneThumbCarousel,
-      },
-    });
-  }
+  
 
   $('#mobile-menu').meanmenu({
     meanMenuContainer: '.mobile-menu',
