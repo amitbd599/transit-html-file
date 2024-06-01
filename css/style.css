@@ -2858,18 +2858,29 @@ background: #172B43;
 /*
 * 10. pricing styled
 */
+
+.price-one__single{
+    position: relative;
+    border-left: 10px solid #172B43;
+    border-radius: 10px 0px 0px 10px;
+    background: #fff;
+    transition: all .3s linear;
+     padding:0 40px;
+     overflow: hidden;
+}
+
+
+
+.price-one__single:hover{
+    border-left: 10px solid #E6092E;
+}
+
 .price-one__top {
-    padding: 69.5px 0;
-    background-color: white;
+    padding: 60px 0;
     transition: all .4s ease;
 }
 
-.price-one__bottom {
-    padding: 53px 0;
-    background-color: #f8f8f8;
-    margin-top: 10px;
-    transition: all .4s ease;
-}
+
 
 .price-one__title {
     font-size: 24px;
@@ -2880,7 +2891,7 @@ background: #172B43;
 }
 
 .price-one__price {
-    margin: 0;
+   margin-top: 10px;
     font-family: "Poppins", sans-serif;
     font-weight: 900;
     color: #E8092E;
@@ -2892,12 +2903,16 @@ background: #172B43;
     margin: 0;
     padding: 0;
     list-style: none;
+    margin-top: 20px;
 }
 
 .price-one__feature-item {
     color: #7E7F82;
-    font-weight: 600;
     font-size: 16px;
+}
+
+.price-one__feature-item i{
+    padding-right: 6px;
 }
 
 .price-one__feature-item+.price-one__feature-item {
@@ -2908,13 +2923,10 @@ background: #172B43;
     margin-top: 50px;
 }
 
-.price-one__single:hover .price-one__top {
-    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.05);
-}
 
-.price-one__single:hover .price-one__bottom {
-    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.05);
-}
+
+
+
 
 .price-two .container__low {
     max-width: 790px;
