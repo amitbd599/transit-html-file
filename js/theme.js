@@ -153,6 +153,7 @@
       active: true,
       smartSpeed: 1000,
       autoplay: 5000,
+      autoplayHoverPause: true,
     });
     $('.banner-carousel-btn .left-btn').on('click', function () {
       $('.banner-style-two').trigger('next.owl.carousel');
@@ -208,7 +209,7 @@
       smartSpeed: 700,
       autoplayTimeout: 5000,
       autoplayHoverPause: true,
-      groups:1,
+      groups: 1,
       responsive: {
         0: {
           items: 1,
@@ -232,19 +233,19 @@
     });
   }
 
-
-  if ($(".marquee_mode").length) {
+  if ($('.marquee_mode').length) {
     $('.marquee_mode').marquee({
-        speed: 80,
-        gap: 0,
-        delayBeforeStart: 0,
-        direction: 'left',
-        duplicated: true,
-        pauseOnHover: true,
-        startVisible:true,
+      speed: 80,
+      gap: 0,
+      delayBeforeStart: 0,
+      direction: 'left',
+      duplicated: true,
+      pauseOnHover: true,
+      startVisible: true,
     });
-}
+  }
 
+  $('select').niceSelect();
 
   if ($('.brand-one__carousel').length) {
     $('.brand-one__carousel').owlCarousel({
@@ -294,8 +295,6 @@
       return false;
     });
   }
-
-  
 
   $('#mobile-menu').meanmenu({
     meanMenuContainer: '.mobile-menu',
