@@ -1665,7 +1665,7 @@ hr.style-one {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     background: #E8092E;
     box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
     overflow: hidden;
@@ -1679,6 +1679,7 @@ hr.style-one {
     content: " ";
     width: 0%;
     height: 100%;
+    
     background: #fff;
     position: absolute;
     transition: all 0.4s ease-in-out;
@@ -1706,7 +1707,7 @@ hr.style-one {
   
  .btn_shape_1:hover span {
     color: #172B43 !important;
-    animation: scaleUp 0.3s ease-in-out;
+    /* animation: scaleUp 0.3s linear; */
   }
   
   @keyframes scaleUp {
@@ -2422,7 +2423,7 @@ hr.style-one {
 .project-style-one__image-block:before {
     content: '';
     position: absolute;
-    background-color: #172B43;
+    background-color: rgba(232, 9, 46, 0.349);
     opacity: .8;
     top: 0;
     left: 0;
@@ -2442,7 +2443,7 @@ hr.style-one {
 
 .project-style-one__text-block {
     position: relative;
-    padding: 50px 0;
+    padding: 50px 30px;
 }
 
 .project-style-one__title {
@@ -2450,6 +2451,7 @@ hr.style-one {
     font-size: 22px;
     font-family: "Poppins", sans-serif;
     font-weight: bold;
+    padding-top: 10px;
 }
 
 .project-style-one__title a {
@@ -2460,7 +2462,6 @@ hr.style-one {
 .project-style-one__category {
     color: #E8092E;
     font-size: 16px;
-    font-weight: 600;
     display: block;
     line-height: 1em;
     margin-bottom: 5px;
@@ -2477,10 +2478,11 @@ hr.style-one {
     border-radius: 50%;
     position: absolute;
     left: 50%;
-    bottom: 0;
+    top: -42px;
     -webkit-transform: translateX(-50%) translateY(50%);
     transform: translateX(-50%) translateY(50%);
     transition: all .4s ease;
+    z-index: 12;
 }
 
 .project-style-one__more-link i {
@@ -2495,12 +2497,12 @@ hr.style-one {
     transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
 }
 
-.project-style-one__single:hover .project-style-one__title a {
+.project-style-one__single .project-style-one__title:hover a {
     color: #E8092E;
 }
 
 .project-style-one__single:hover .project-style-one__category {
-    color: #E8092E;
+    color: #172B43;
 }
 
 .project-style-one__single:hover .project-style-one__image-block>img {
@@ -2508,9 +2510,7 @@ hr.style-one {
     transform: scale(1.02);
 }
 
-.project-style-one__single:hover .project-style-one__more-link {
-    background-color: #172B43;
-}
+
 
 .project-details .row-3-col {
     margin-left: -15px;
@@ -2638,23 +2638,62 @@ hr.style-one {
     width: 100%;
 }
 
-.cta-one__image-block__content {
+.cta-block__content {
     background-color: #E8092E;
-    padding: 59px 0;
+    padding: 36px 0;
 }
 
-.cta-one__image-block__content h3 {
-    font-size: 30px;
-    font-weight: 700;
-    color: #fff;
-    font-family: "Poppins", sans-serif;
+.cta-block__content .about-three__counter-box {
+    position: relative;
+    display: block;
+}
+
+.cta-block__content .about-three__counter-list {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
     margin: 0;
 }
 
+.cta-block__content .about-three__counter-list li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cta-block__content .about-three__count {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.cta-block__content .about-three__count h3 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #fff;
+}
+.cta-block__content .about-three__count span {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #fff;
+}
+.cta-block__content .about-three__counter-list li p {
+    position: relative;
+    margin-left: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #fff;
+    margin: 0;
+}
+
+
 .cta-one__text {
-    color: #CFC1E5;
+    color: #fff;
     font-size: 16px;
-    font-weight: 600;
     line-height: 30px;
     margin: 0;
     margin-top: -15px;
@@ -2864,9 +2903,30 @@ background: #172B43;
     border-left: 10px solid #172B43;
     border-radius: 10px 0px 0px 10px;
     background: #fff;
-    transition: all .3s linear;
+    transition: all .5s linear;
      padding:0 40px;
      overflow: hidden;
+     z-index: 0;
+}
+.price-one__single {
+
+    & .shape{
+        position: absolute;
+    top: 20px;
+    left: 100%;
+    z-index: -1;
+    transition: all .5s linear;
+    & img{
+        width: 1000px;
+        opacity: .2;
+    }
+
+    }
+    
+
+    &:hover .shape{
+        left: 100px;
+    }
 }
 
 
@@ -3914,18 +3974,19 @@ border-radius: 10px;
 * 15. brand styled
 */
 .brand-one {
-    background-color: #E8092E;
-    padding: 92px 0;
+    /* background-color: #E6092E; */
+    padding: 60px 0;
+    position: relative;
+    display: flex;
+    border-top: 1px solid #F3F3F3;
 }
 
-.brand-one__carousel img {
-    opacity: .6;
-    transition: all .4s ease;
+
+.brand-one .item  a{
+   padding: 0 70px;
 }
 
-.brand-one__carousel img:hover {
-    opacity: 1;
-}
+
 
 /*
 * 16. testimonial styled

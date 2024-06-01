@@ -43,7 +43,7 @@
   if ($('.counter').length) {
     $('.counter').counterUp({
       delay: 10,
-      time: 3000,
+      time: 1000,
     });
   }
 
@@ -232,6 +232,20 @@
     });
   }
 
+
+  if ($(".marquee_mode").length) {
+    $('.marquee_mode').marquee({
+        speed: 80,
+        gap: 0,
+        delayBeforeStart: 0,
+        direction: 'left',
+        duplicated: true,
+        pauseOnHover: true,
+        startVisible:true,
+    });
+}
+
+
   if ($('.brand-one__carousel').length) {
     $('.brand-one__carousel').owlCarousel({
       loop: true,
@@ -248,19 +262,19 @@
           items: 1,
         },
         480: {
-          items: 3,
+          items: 2,
         },
         600: {
-          items: 3,
+          items: 2,
         },
         991: {
-          items: 4,
+          items: 2,
         },
         1000: {
-          items: 5,
+          items: 3,
         },
         1200: {
-          items: 5,
+          items: 3,
         },
       },
     });
