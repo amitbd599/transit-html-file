@@ -198,6 +198,42 @@
       },
     });
   }
+
+  if ($('.blog-one__carousel').length) {
+    $('.blog-one__carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,
+      dots: false,
+      autoWidth: false,
+      autoplay: false,
+      smartSpeed: 700,
+      autoplayTimeout: 5000,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1,
+        },
+        480: {
+          items: 1,
+        },
+        600: {
+          items: 1,
+        },
+        991: {
+          items: 2,
+        },
+        1000: {
+          items: 2,
+        },
+        1200: {
+          items: 2,
+        },
+      },
+    });
+  }
+
+
   if ($('.team-one__carousel').length) {
     $('.team-one__carousel').owlCarousel({
       loop: true,
