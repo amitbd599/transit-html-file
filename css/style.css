@@ -857,7 +857,7 @@ hr.style-one {
     position: absolute;
     content: "\f107";
     right: -4px;
-    top: 36px;
+    top: 34px;
     font-size: 14px;
     font-size: 14px;
     color: #7D7E81;
@@ -3112,6 +3112,7 @@ color: var(--primary-color) !important;
     line-height: 24px;
     color: var(--white-color);
     margin: 0;
+    text-align: left;
 }
 
 
