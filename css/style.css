@@ -565,6 +565,13 @@ hr.style-one {
     flex-wrap: wrap;
 }
 
+
+.row-3-col-reverse {
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
 .col-3-col {
     -webkit-box-flex: 1;
     flex: 1 0 33.333333333%;
@@ -2986,7 +2993,7 @@ hr.style-one {
     color: #7D7E81;
     font-size: 16px;
     line-height: 30px;
-    font-weight: 600;
+    font-weight: normal;
 }
 
 .project-details__sub-title {
