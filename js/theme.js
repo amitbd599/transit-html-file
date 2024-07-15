@@ -152,7 +152,7 @@
       animateIn: 'fadeIn',
       active: true,
       smartSpeed: 1000,
-      autoplay: 5000,
+      autoplay: false,
       autoplayHoverPause: true,
     });
     $('.banner-carousel-btn .left-btn').on('click', function () {
