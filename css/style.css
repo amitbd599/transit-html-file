@@ -3017,8 +3017,8 @@ hr.style-one {
 }
 
 .project-style-one.two .project-style-one__single .project-style-one__image-block:before {
-  border-radius: 10px;
-  height: 60%;
+  border-radius: 10px 10px 0 0;
+  height: 62%;
 }
 
 .project-style-one.two .project-style-one__single .project-style-one__text-block {
@@ -3033,7 +3033,7 @@ hr.style-one {
 
 .project-style-one.two .project-style-one__single:hover .project-style-one__text-block {
   visibility: visible;
-  bottom: 0px;
+  bottom: -2px;
 }
 
 .project-details .row-3-col {

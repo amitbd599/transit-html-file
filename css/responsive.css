@@ -564,6 +564,10 @@
         display: none;
     }
 
+    .project-style-one.two .project-style-one__single .project-style-one__image-block::before {
+        height: 68%;
+    }
+
 }
 
 @media (max-width: 991px) {
@@ -822,6 +826,15 @@
         padding-bottom: 70px;
     }
 
+    .contact-two__image-block {
+        display: none;
+    }
+
+    .contact-two {
+        padding-top: 100px;
+        padding-bottom: 80px;
+    }
+
 
 }
 
@@ -923,6 +936,10 @@
 
     .service-three {
         padding-bottom: 40px;
+    }
+
+    .blog-one__single.content-margin-80 {
+        margin-bottom: 40px;
     }
 
 
@@ -1066,6 +1083,11 @@
 
     .accrodion-grp .accrodion .accrodion-title h4 {
         padding-right: 70px;
+    }
+
+    .project-style-one .wrapper__content .project-style-one__image-block>img {
+        height: 300px;
+        object-fit: cover;
     }
 
 }
@@ -1218,6 +1240,25 @@
     .testimonial-one__single.two .testimonial-one__text {
         font-size: 20px;
         line-height: 32px;
+    }
+
+    .contact-two .my-auto {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .blog-one__meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .blog-one__meta-item+.blog-one__meta-item {
+        margin-left: 0;
+    }
+
+    .brand-one.two ul.brand-style-2 li {
+        padding: 25px 10px;
     }
 }
 
