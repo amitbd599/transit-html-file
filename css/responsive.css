@@ -835,6 +835,14 @@
         padding-bottom: 80px;
     }
 
+    .site-footer .upper-footer .content-block {
+        align-items: start;
+    }
+
+    .site-footer .upper-footer .subscribe-form {
+        justify-content: start;
+    }
+
 
 }
 
@@ -940,6 +948,15 @@
 
     .blog-one__single.content-margin-80 {
         margin-bottom: 40px;
+    }
+
+    .site-footer .upper-footer .subscribe-form {
+        display: grid;
+        gap: 20px;
+    }
+
+    .site-footer.two .btn-carousel-block {
+        padding-left: 0;
     }
 
 
