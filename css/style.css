@@ -3344,10 +3344,10 @@ hr.style-one {
 .cta-three__image {
   position: absolute;
   bottom: 0;
-  left: -200px;
+  right: calc(100vw - 42%);
 }
 
-@media (max-width: 1440px) {
+/* @media (max-width: 1440px) {
   .cta-three__image {
     -webkit-transform-origin: center right;
     transform-origin: center right;
@@ -3356,7 +3356,7 @@ hr.style-one {
     -webkit-transform: translateY(-50%) scale(0.75);
     transform: translateY(-50%) scale(0.75);
   }
-}
+} */
 
 .cta-three__text {
   margin: 0;
@@ -4310,7 +4310,7 @@ hr.style-one {
   -webkit-box-align: center;
   align-items: center;
   background-color: var(--primary-color);
-  padding: 57px 0;
+  padding: 56px 0;
   padding-left: 40px;
   text-align: left;
 }
