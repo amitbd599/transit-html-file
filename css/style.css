@@ -31,7 +31,7 @@
 /*
 * 1. imported styled
 */
-/* @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700|Titillium+Web:300,400,600,700,900"); */
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yantramanav:wght@100;300;400;500;700;900&display=swap");
 @import url("bootstrap.min.css");
 @import url("animate.css");
@@ -44,11 +44,9 @@
 @import url("swiper.min.css");
 @import url("meanmenu.css");
 @import url("nice-select.css");
-/* @import url("../plugins/dexen-icon/style.css"); */
 
 :root {
   --primary-color: #e8092e;
-  /* --secondary-color: var(--heading-color); */
   --heading-color: #172b43;
   --white-color: #fff;
   --text-color: #7e7f82;
@@ -624,7 +622,7 @@ hr.style-one {
   height: 100%;
   z-index: 9999;
   background-color: var(--white-color);
-  background-image: url(../images/resources/preloader.gif);
+  background-image: url(../images/resources/preloaders.gif);
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -1386,12 +1384,12 @@ hr.style-one {
   border-radius: 50%;
   text-align: center;
   transition: all 0.4s ease;
-  border: 1px solid #f3f3f3;
+  background: var(--primary-color);
 }
 
 .sidebar__content .social-block a i {
   font-size: 18px;
-  color: #7d7e81;
+  color: var(--white-color);
   line-height: 43px;
 }
 
@@ -1735,6 +1733,9 @@ hr.style-one {
   -webkit-box-align: center;
   align-items: center;
   position: relative;
+}
+.site-header .logo a {
+  padding: 20px 0;
 }
 
 .site-header.header-one .top-bar .logo-block {
@@ -2723,7 +2724,7 @@ hr.style-one {
   font-size: 18px;
   font-weight: 600;
   width: 100%;
-  max-width: 219px;
+  max-width: 290px;
   height: 69px;
   line-height: 69px;
   text-align: center;
