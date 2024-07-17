@@ -273,7 +273,7 @@
 
   if ($('.marquee_mode').length) {
     $('.marquee_mode').marquee({
-      speed: 80,
+      speed: 20,
       gap: 0,
       delayBeforeStart: 0,
       direction: 'left',
