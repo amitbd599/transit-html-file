@@ -48,11 +48,9 @@
     .blog-details br {
         display: unset;
     }
-
 }
 
 @media (max-width: 1199px) {
-
     .header-navigation {
         margin-bottom: 0;
     }
@@ -376,7 +374,6 @@
         justify-content: space-between;
     }
 
-
     .site-header.header-one .top-bar .logo-block {
         position: relative;
         top: 0%;
@@ -448,7 +445,6 @@
     .about-three__image>img {
         width: 100%;
     }
-
 
     .cta-four .container {
         -webkit-box-orient: vertical;
@@ -531,7 +527,6 @@
         padding-right: 200px;
     }
 
-
     .banner-style-two .slide .inner__img {
         display: none;
     }
@@ -580,7 +575,6 @@
         display: grid;
         gap: 20px;
     }
-
 }
 
 @media (max-width: 991px) {
@@ -886,7 +880,14 @@
         display: block;
     }
 
+    .team-details__top-right {
+        margin-left: 0;
+        margin-top: 70px;
+    }
 
+    .team-details__bottom-right {
+        margin-left: 0;
+    }
 }
 
 @media (max-width: 767px) {
@@ -898,7 +899,6 @@
         font-size: 80px;
         line-height: 70px;
     }
-
 
     .banner-style-two .banner-title {
         font-size: 60px;
@@ -1030,8 +1030,6 @@
         flex-wrap: wrap;
         gap: 10px;
     }
-
-
 }
 
 @media (max-width: 575px) {
@@ -1098,7 +1096,6 @@
         padding: 50px 30px;
     }
 
-
     .blog-details__tags-share {
         padding: 50px 30px;
     }
@@ -1106,7 +1103,6 @@
     .blog-details__author {
         padding: 50px 30px;
     }
-
 
     .blog-details__tags-share {
         -webkit-box-orient: vertical;
@@ -1216,6 +1212,19 @@
         padding: 50px 30px;
     }
 
+    .team__details .team-details__top-right .team-details__top-content .team-details__top-name {
+        font-size: 40px;
+    }
+
+    .team__details .team-details__top-right {
+        margin-left: 0;
+    }
+
+
+
+    .team-details__bottom-left {
+        margin-right: 0 !important;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1255,7 +1264,6 @@
         padding: 0;
         margin-top: 30px;
     }
-
 
     .about-three__image-two img {
         width: 100%;
@@ -1527,5 +1535,4 @@
     .about-three .inner__img .img_two {
         display: none;
     }
-
 }
