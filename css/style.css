@@ -2406,7 +2406,7 @@ hr.style-one {
 }
 
 @-webkit-keyframes roundMover {
-  form {
+  from {
     -webkit-transform: translateX(-50%) scale(1) rotate(0deg);
     transform: translateX(-50%) scale(1) rotate(0deg);
     opacity: 0.04;
@@ -2420,7 +2420,7 @@ hr.style-one {
 }
 
 @keyframes roundMover {
-  form {
+  from {
     -webkit-transform: translateX(-50%) scale(1) rotate(0deg);
     transform: translateX(-50%) scale(1) rotate(0deg);
     opacity: 0.04;
@@ -4577,7 +4577,7 @@ hr.style-one {
   position: relative;
   display: block;
   text-align: center;
-  background-color: var(--primary-color) 0e;
+  background-color: var(--white-color);
   padding: 46px 30px 21px;
 }
 
@@ -6672,11 +6672,9 @@ hr.style-one {
   color: var(--primary-color);
 }
 
-.menu-last {
-  .sub-menu {
-    left: auto !important;
-    right: 0;
-  }
+.menu-last .sub-menu {
+  left: auto !important;
+  right: 0;
 }
 
 .team__details .team-details__top-left .team-details__top-img img {
