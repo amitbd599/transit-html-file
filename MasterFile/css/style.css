@@ -2957,7 +2957,7 @@ hr.style-one {
 .project-style-one__title a {
   color: var(--heading-color);
   transition: all 0.4s ease;
-      line-height: 1.5;
+  line-height: 1.5;
 }
 
 .project-style-one__category {
@@ -5729,7 +5729,7 @@ hr.style-one {
 }
 
 .process-card-wrap:after {
-  background: url(/images/resources/process-arrow-1.svg);
+  background: url("../images/resources/process-arrow-1.svg");
   background-repeat: no-repeat;
   background-size: contain;
   content: "";
@@ -5746,7 +5746,7 @@ hr.style-one {
 }
 
 .process-card-wrap:nth-child(2):after {
-  background: url(/images/resources/process-arrow-1.svg);
+  background: url("../images/resources/process-arrow-1.svg");
   background-repeat: no-repeat;
   background-size: contain;
   height: 157px;
@@ -6882,4 +6882,9 @@ hr.style-one {
 
 .blog-one__single.shine {
   overflow: unset;
+}
+
+
+.banner-style-one, .banner-style-two, .testimonial-one__carousel, .blog-one__carousel, .team-one__carousel, .brand-one__carousel  {
+  touch-action: manipulation; /* Prevents default touch actions like scrolling */
 }
