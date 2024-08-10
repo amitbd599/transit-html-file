@@ -6,9 +6,6 @@
   };
 
 
-
-  gsap.registerPlugin(ScrollTrigger, SplitText);
-
   var initJs = {
     m: function (e) {
       initJs.d();
@@ -44,11 +41,13 @@
       initJs.contactForm();
       initJs.title_animation();
       initJs.skew_up();
-      initJs.revelImageAnimation();
       initJs.sectionSlideUp();
       initJs.sectionSlideDown();
-      initJs.boxitem_slideup();
       initJs.wowAnimation();
+
+
+
+
 
     },
 
@@ -149,35 +148,7 @@
       }
     },
 
-    // video-popup
-    // videoPopup: function () {
-    //   if ($('.video-popup').length) {
-    //     if ($('.main-navigation .navigation-box .sub-menu').length) {
-    //       var subMenu = $('.main-navigation .sub-menu');
-    //       subMenu
-    //         .parent('li')
-    //         .children('a')
-    //         .append(function () {
-    //           return '<button class="sub-nav-toggler"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>';
-    //         });
-    //       var mainNavToggler = $('.header-navigation .menu-toggler');
-    //       var subNavToggler = $('.main-navigation .sub-nav-toggler');
-    //       mainNavToggler.on('click', function () {
-    //         var Self = $(this);
-    //         var menu = Self.data('target');
-    //         $(menu).slideToggle();
-    //         $(menu).toggleClass('showen');
-    //         return false;
-    //       });
-    //       subNavToggler.on('click', function () {
-    //         var Self = $(this);
-    //         Self.parent().parent().children('.sub-menu').slideToggle();
-    //         return false;
-    //       });
-    //     }
 
-    //   }
-    // },
 
     // Sidebar toggle
     sidebarToggle: function () {
@@ -673,48 +644,12 @@
       }
     },
 
-    // Start Image Ravel Animation
-    revelImageAnimation: function () {
-      $(document).ready(function () {
-        gsap.registerPlugin(ScrollTrigger);
 
-        let revealContainers = document.querySelectorAll(".vre-reveal-one");
-
-        revealContainers.forEach((container) => {
-          let image = container.querySelector(".vre-reveal-image-one");
-          let vre = gsap.timeline({
-            scrollTrigger: {
-              trigger: container,
-              toggleActions: "restart none none reset",
-            },
-          });
-
-          vre.set(container, {
-            autoAlpha: 1,
-
-          });
-
-          vre.from(container, {
-            xPercent: 100,
-            duration: 1.5,
-            ease: "power2.out()",
-          });
-
-          vre.from(image, {
-            xPercent: -100,
-            scale: 1.3,
-            duration: 1.5,
-            ease: "power2.out",
-            delay: -1.5,
-          });
-        });
-
-        ScrollTrigger.refresh();
-      });
-    },
 
     // Start Area Slide up Animation || vre-slide-up-gsap
     sectionSlideUp: function () {
+      gsap.registerPlugin(ScrollTrigger);
+
       $(document).ready(function () {
         $(".vre-slide-up-gsap").each(function () {
           let vre_SkewInUp = gsap.timeline({
@@ -745,6 +680,8 @@
 
     // Start Area Slide down Animation //vre-slide-down-gsap
     sectionSlideDown: function () {
+      gsap.registerPlugin(ScrollTrigger);
+
       $(document).ready(function () {
         $(".vre-slide-down-gsap").each(function () {
           let vre_SkewInUp = gsap.timeline({
@@ -773,17 +710,7 @@
       });
     },
 
-    // Start Box Item Animation // boxitembowns
-    boxitem_slideup: function () {
-      $(document).ready(function () {
-        TweenMax.to(".boxitembowns", 2, {
-          y: 275,
-          repeat: -1,
-          repeatDelay: 0.5,
-          ease: Bounce.easeOut,
-        });
-      });
-    },
+
 
     // Start Wow Animation
     wowAnimation: function () {

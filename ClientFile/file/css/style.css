@@ -6883,3 +6883,8 @@ hr.style-one {
 .blog-one__single.shine {
   overflow: unset;
 }
+
+
+.banner-style-one, .banner-style-two, .testimonial-one__carousel, .blog-one__carousel, .team-one__carousel, .brand-one__carousel  {
+  touch-action: manipulation; /* Prevents default touch actions like scrolling */
+}
